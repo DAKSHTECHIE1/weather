@@ -53,14 +53,14 @@ const App=() =>{
     list.dataitem(data1);
   }
   console.log('status',status);
-  // if(searchText.value===''){
-  //   return (
-  //     <div className="App">
-  //   <Nav searchText={searchText} fetchdata={fetchdata}/>
-  //    <h1>Welcome to our weather app</h1>
-  //   </div>
-  //   )
-  // }
+  if(searchText.value===''){
+    return (
+      <div className="App">
+    <Nav searchText={searchText} fetchdata={fetchdata}/>
+     <h1>Welcome to our weather app</h1>
+    </div>
+    )
+  }
 
 
   return (
