@@ -91,13 +91,13 @@
     width:60vw;
  }   
  .main-card-data{
-    right:30px;
+    right:35px;
  }
 }
 @media (max-width:400px){
     .main-card-data{
         position: relative;
-        right:40px;
+        right:44px;
     }
 }
 .wind{
