@@ -4,7 +4,7 @@ const Body=(props)=>{
     const {city,weather,icon,temp,wind}=props;
     return(
         <div className="body">
-            <div className="main-card">
+            <div className="main-card gradient ">
                 <div className="main-card-data">
                    <div><h1 id='city'>{city.value}</h1></div> 
                     <div><h2 id='tem'>{parseInt(temp.value)}&deg;C</h2></div>

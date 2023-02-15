@@ -2,7 +2,7 @@
     height:auto;
     /* width:98.6vw; */
     width:100vw;
-    background-color: rgb(32, 86, 246);
+    /* background-color: rgb(32, 86, 246); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

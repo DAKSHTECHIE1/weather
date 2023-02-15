@@ -57,7 +57,7 @@ const App=() =>{
     return (
       <div className="App">
     <Nav searchText={searchText} fetchdata={fetchdata}/>
-     <h1>Welcome to our weather app</h1>
+     <h1 id='welcome'>Welcome to our weather app</h1>
     </div>
     )
   }
