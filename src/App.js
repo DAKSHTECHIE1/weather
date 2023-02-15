@@ -13,6 +13,8 @@ const App=() =>{
   const lon=useFormInput(77);
   const weather=useFormInput('loa..')
   const city=useFormInput('loa...')
+  var status=0;
+  var response;
   const update=(c)=>{
     console.log('update1')
     searchText.value=c;
@@ -26,8 +28,12 @@ const App=() =>{
     console.log('before')
     var f= await update(a.value);
     console.log('after')
-    var response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchText.value},&limit=1&appid=3b5e741e002beea31c2dba0af0114f7b`);//okkk
+     response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchText.value},&limit=1&appid=3b5e741e002beea31c2dba0af0114f7b`);//okkk
+    console.log('r',response.status);
+    status=response.status;
+    console.log('in',status)
     var data = await response.json();
+    console.log('d',data);
     // console.log(data[0].name);
     // console.log(data[0].lat);
     lat.dataitem(data[0].lat);
@@ -46,16 +52,17 @@ const App=() =>{
     var data1=datap.list.filter((elem,index)=>{return index%8===0&&index!=0})
     list.dataitem(data1);
   }
-  if(searchText.value===''){
-    return (
-      <div className="App">
-    <Nav searchText={searchText} fetchdata={fetchdata}/>
-     <h1>Welcome to our weather app</h1>
-    </div>
-    )
-  }
-   
-  
+  console.log('status',status);
+  // if(searchText.value===''){
+  //   return (
+  //     <div className="App">
+  //   <Nav searchText={searchText} fetchdata={fetchdata}/>
+  //    <h1>Welcome to our weather app</h1>
+  //   </div>
+  //   )
+  // }
+
+
   return (
     <div className="App">
     <Nav searchText={searchText} fetchdata={fetchdata}/>
@@ -63,7 +70,7 @@ const App=() =>{
     <Future searchText={searchText} lat={lat} lon={lon} list={list}/>
     </div>
   );
-
+  
   
 }
 

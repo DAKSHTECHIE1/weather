@@ -38,6 +38,8 @@ const Forecast=({day})=>{
                   <span className="forecast-img">
                   {day.weather?(<img height='10px' src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}/>):null}
                   </span>
+                  <span><i class="fa-solid fa-wind wind ic"></i></span>
+                  <span className="win">{day.wind?.speed}m/s</span>
                 </span>
                
             </div>

@@ -38,3 +38,14 @@
     bottom:-3px;
     font-size: 18px;
 }
+.win{
+    position: absolute;
+    right:110px;
+    bottom:-2px;
+}
+.ic{
+    position: absolute;
+    font-size:20px;
+    right:170px;
+    top:5px;
+}
