@@ -1,6 +1,7 @@
 .body{
     display: flex;
     justify-content: center;
+   
     height:50vh;
     width:100vw;
     background-image: linear-gradient( rgb(115, 115, 228),rgb(33, 33, 241));
@@ -13,7 +14,8 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items:center;
-    top:20px;
+    position: relative;
+    right:20px;
 }
 .main-card{
     display: flex;
@@ -59,7 +61,7 @@
 @media (max-width:800px){
     .main-card-data{
         position: relative;
-        right:10px;
+        right:20px;
         top:-0px;
     }
     .main-card{
@@ -88,11 +90,14 @@
  .main-card{
     width:60vw;
  }   
+ .main-card-data{
+    right:30px;
+ }
 }
 @media (max-width:400px){
     .main-card-data{
         position: relative;
-        right:30px;
+        right:40px;
     }
 }
 .wind{
@@ -161,4 +166,7 @@
     #img-centre{
         left:38px;
     }
+}
+@media (max-width:380px){
+
 }
