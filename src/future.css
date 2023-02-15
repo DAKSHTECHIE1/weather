@@ -1,0 +1,40 @@
+.future{
+    height:auto;
+    /* width:98.6vw; */
+    width:100vw;
+    background-color: rgb(32, 86, 246);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.forecast{
+    height:59px;
+    width: 99vw;
+    background-color:rgb(164, 164, 241);
+    border:1px solid black;
+    border-radius: 10px;
+    padding-left:4px;
+    margin: 2px;
+}
+.block{
+    position: relative;
+    top:15px;
+    display: flex;
+    align-items: center;
+   
+    /* justify-content: center; */
+}
+.forecast-img img{
+    position: absolute;
+    /* bottom:-15px; */
+    top:-7px;
+    right:5px;
+    height:45px;
+    width:45px;
+}
+.temper{
+    position: absolute;
+    right:60px;
+    bottom:-3px;
+    font-size: 18px;
+}

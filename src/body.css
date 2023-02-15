@@ -1,0 +1,164 @@
+.body{
+    display: flex;
+    justify-content: center;
+    height:50vh;
+    width:100vw;
+    background-image: linear-gradient( rgb(115, 115, 228),rgb(33, 33, 241));
+}
+.main-card-data{
+    height:40vh;
+    width:10vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    top:20px;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    width:30vw;
+    /* background-color: rgb(62, 58, 58); */
+    border: 1.5px solid black;
+    border-radius:20px;
+    position:relative;
+    top:20px;
+    background-image:linear-gradient(to top right,#97b4e4,#3379ea);
+}
+.main-card-data h1{
+    position: relative;
+    top:15px;
+}
+.main-card-data h2{
+    text-align: center;
+    position: relative;
+    /* bottom:20px; */
+    top:40px;
+}
+#desc{
+    position: relative;
+    top:70px;
+    right:48px;
+}
+.main-card-data img{
+    position: relative;
+    top:5px;
+    left:48px;
+}
+.main-card-data h1,h2,h3{
+    margin: 0px;
+}
+@media (max-width:1000px){
+    h1{
+        font-size: 25px;;
+    }
+}
+@media (max-width:800px){
+    .main-card-data{
+        position: relative;
+        right:10px;
+        top:-0px;
+    }
+    .main-card{
+        width:40vw;
+    }
+}
+@media (max-width:630px){
+    .main-card-data h1{
+        font-size: 23px;;
+    }
+    .main-card-data h2{
+        font-size:20px;
+    }
+    .main-card-data h3{
+        font-size:18px;
+    }
+    .main-card-data{
+        position: relative;
+        right:20px;
+    }
+    .main-card{
+        width:45vw;
+    }
+}
+@media (max-width:500px){
+ .main-card{
+    width:60vw;
+ }   
+}
+@media (max-width:400px){
+    .main-card-data{
+        position: relative;
+        right:30px;
+    }
+}
+.wind{
+    position: relative;
+  font-size: 25px;
+  top:10px;
+  right: 30px;
+}
+#wind-value{
+    font-size: 20px;
+    position: relative;
+    left:20px;
+    bottom:12px;
+}
+/* @media (max-height:600px){
+    .main-card{
+        height:98%;
+        top:1px;
+    }
+    .main-card-data{
+        height: 100%;
+    }
+} */
+@media (max-height:600px){
+    /* #city{
+        font-size:22px;
+    }
+    #tem{
+        font-size:20px;
+    }
+    #desc{
+        font-size:16px;
+    }
+    #img-centre{
+        height:80px;
+        width:80px;
+        top:15px;
+    }
+    #wind-value{
+        font-size:15px;   
+    } */
+    .body{
+        height:60vh
+    }
+    .main-card{
+        height:50vh;
+    }
+    .main-card-data{
+        /* top:-10px; */
+        height:100%;
+    }
+}
+@media (max-height:500px){
+    .body{
+        height:74vh
+    }
+    .main-card{
+        height:62vh;
+    }
+    .main-card-data{
+        /* top:-10px; */
+        height:100%;
+    }
+}
+@media (max-width:300px){
+    #img-centre{
+        left:38px;
+    }
+}
